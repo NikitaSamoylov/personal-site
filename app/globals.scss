@@ -1,0 +1,25 @@
+@import '../styles/vars.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  font-size: 10px;
+  margin: 0 auto;
+  background-color: $page-bg-color;
+  margin-left: auto;
+  width: 100%;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
