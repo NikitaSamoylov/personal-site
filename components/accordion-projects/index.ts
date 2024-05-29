@@ -1,0 +1,1 @@
+export { AccordionProjects } from './AccordionProjects';

@@ -1,9 +1,16 @@
-@import '../../../styles/vars.scss';
+@import '../../styles/vars.scss';
 
 .ac_container {
   width: 100%;
   margin-bottom: 125px;
   border-bottom: 1px solid black;
+}
+
+.ac_container label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
 }
 
 .ac_container label p {
@@ -17,7 +24,7 @@
   cursor: pointer;
   color: $primary-text-color;
   font-size: 2rem;
-  border-top: 1px solid black;
+  // border-top: 1px solid black;
 }
 
 .ac_container label:hover:after,

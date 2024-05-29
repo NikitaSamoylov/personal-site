@@ -1,0 +1,88 @@
+@import '../../styles/vars.scss';
+
+.accordion {
+  width: 100%;
+  margin-bottom: 125px;
+  border-bottom: 1px solid black;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+  }
+
+  &__header_btn {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__btns_item {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid grey;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 17px;
+    margin-left: 2px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    color: $primary-text-color;
+    font-size: 2rem;
+    // border-top: 1px solid black;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__content {
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+
+  &__checkbox:checked~&__content {
+    width: 100%;
+    text-align: left;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+
+  &__content_item {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 23px;
+    text-align: left;
+  }
+
+  &__btns {
+    margin-top: 33px;
+  }
+}

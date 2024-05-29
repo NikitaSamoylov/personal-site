@@ -51,14 +51,19 @@ const Accordeon: React.FC<IAccordeonProps> = ({ data }) => {
                 <p>
                   { el.title }
                 </p>
+                <p>+</p>
               </label>
               <article style={
                 +checked === el.num ?
-                  { height: +size / 1.49 } :
+                  {
+                    height: +size / 1.49
+                  } :
                   { height: 0 }
               }
               >
-                <p ref={ targetRef }>{ el.descr }</p>
+                <p ref={ targetRef }>
+                  { el.descr }
+                </p>
               </article>
             </div>
           )

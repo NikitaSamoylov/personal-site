@@ -1,5 +1,5 @@
 import NextImage from 'next/image';
-import { Accordeon } from '@/ui/button/accordeon';
+import { Accordeon } from '@/components/accordeon';
 import styles from './About.module.scss';
 
 import layoutImg from './react-course.png';
