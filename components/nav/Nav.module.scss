@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import '../../styles/vars.scss';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__link {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    text-decoration: none;
+  }
+
+  &__link_active {
+    color: $secondary-text-color !important;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 38px;
+  }
+}
+
+@media (max-width: 625px) {
+  .nav {
+    display: none;
+  }
+}

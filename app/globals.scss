@@ -11,8 +11,7 @@ body {
   font-size: 10px;
   margin: 0 auto;
   background-color: $page-bg-color;
-  margin-left: auto;
-  width: 100%;
+  max-width: 728px;
 }
 
 .container {

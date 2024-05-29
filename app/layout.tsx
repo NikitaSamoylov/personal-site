@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, PT_Sans_Narrow, Roboto } from "next/font/google";
 import "./globals.scss";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: '400' });
+const ptsans = PT_Sans_Narrow({ subsets: ["latin"], weight: '400' });
+const roboto = Roboto({ subsets: ["latin"], weight: '400' });
 
 export const metadata: Metadata = {
   title: "Привет, я - Никита",
@@ -16,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ ubuntu.className }>
+      <body className={ roboto.className }>
         { children }
       </body>
     </html>

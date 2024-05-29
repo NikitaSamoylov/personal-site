@@ -1,11 +1,13 @@
+'use client';
+import Link from 'next/link';
 import { Button } from '@/ui/button';
 import styles from './HeroBtns.module.scss';
 
-const btnsTitles: string[] = [
-  'обо мне',
-  'проекты',
-  'резюме',
-  'связаться'
+const btnsTitles = [
+  { title: 'обо мне', link: '/about' },
+  { title: 'проекты', link: '/projects' },
+  { title: 'резюме', link: '/cv' },
+  { title: 'связаться', link: '/contacts' },
 ];
 
 const HeroBtns: React.FC = () => {
@@ -15,13 +17,15 @@ const HeroBtns: React.FC = () => {
       {
         btnsTitles.map(el => {
           return (
-            <li key={ el }
+            <li key={ el.title }
               className={ styles.hero__item }
             >
-              <Button
-                title={ el }
-                width={ '339px' }
-              />
+              <Link href={ el.link }>
+                <Button
+                  title={ el.title }
+                  width={ '339px' }
+                />
+              </Link>
             </li>
           )
         })
