@@ -1,0 +1,52 @@
+@import '../../styles/vars.scss';
+
+.form {
+  width: 100%;
+
+  &__item {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 10px 0;
+    font-size: 2rem;
+    outline: none;
+    font-family: inherit;
+  }
+
+  &__item::placeholder {
+    font-size: 2rem;
+    color: grey;
+    font-weight: 300;
+  }
+
+  &__element {
+    margin-bottom: 50px;
+  }
+
+  &__item_notice {
+    font-size: 1.6rem;
+    color: rgb(194, 63, 63);
+  }
+
+  &__btn {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-right: 15px;
+  }
+
+  &__btn_disabled {
+    color: grey;
+    border: 1px solid grey;
+  }
+}

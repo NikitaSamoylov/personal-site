@@ -9,7 +9,7 @@ interface IAccordeonProps {
 };
 
 const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
-  const [checked, setChecked] = useState('900');
+  const [checked, setChecked] = useState('0');
   const [accordionHeight, setAccordionHeight] = useState(690);
 
   const targetRef = useRef(null);
@@ -80,7 +80,7 @@ const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
                     <button className={ styles.accordion__btns_item }
                       onClick={ (e) => {
                         e.preventDefault();
-                        window.location.href = `${ el.deployLink }`;
+                        window.open(el.deployLink, '_blanc')
                       } }
                     >
                       Приложение
@@ -88,7 +88,7 @@ const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
                     <button className={ styles.accordion__btns_item }
                       onClick={ (e) => {
                         e.preventDefault();
-                        window.location.href = `${ el.gitHubLink }`;
+                        window.open(el.gitHubLink, '_blanc')
                       } }
                     >
                       Исходники

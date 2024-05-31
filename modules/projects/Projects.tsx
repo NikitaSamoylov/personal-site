@@ -1,5 +1,3 @@
-'use client';
-import { useState } from 'react';
 import { AccordionProjects } from '@/components/accordion-projects';
 import styles from './Projects.module.scss';
 
@@ -83,9 +81,6 @@ const projectsData = [
 ];
 
 const Projects: React.FC = () => {
-  const [blockIsVisible, setBlockIsVisible] = useState(5);
-
-  console.log(blockIsVisible)
 
   return (
     <div>

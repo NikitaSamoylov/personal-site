@@ -1,0 +1,45 @@
+.contacts {
+  padding-bottom: 125px;
+
+  &__links {
+    margin-bottom: 76px;
+  }
+
+  &__title {
+    font-size: 4.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-bottom: 76px;
+  }
+
+  &__info {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: block;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 350px) {
+    &__item {
+      font-size: 1.6rem;
+    }
+
+    &__info {
+      width: 275px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__item_title {
+    font-weight: 600;
+  }
+}

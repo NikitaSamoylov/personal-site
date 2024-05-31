@@ -7,7 +7,7 @@ const nav = [
   { title: 'главная', link: '/' },
   { title: 'о себе', link: '/about' },
   { title: 'проекты', link: '/projects' },
-  { title: 'резюме', link: '/cv' },
+  { title: 'резюме', link: 'https://drive.google.com/file/d/1upoxTrC9XlvYBA8RBYP6jMFSjFEoQBaD/view?usp=drive_link' },
   { title: 'связаться', link: '/contacts' },
 ];
 

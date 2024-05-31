@@ -3,7 +3,7 @@ import { HeroBtns } from '@/components/hero-btns';
 import styles from './Hero.module.scss';
 
 import Img from './main-img.png';
-import imgMobile from './mobile-img.png';
+import imgMobile from './mobile-img.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -16,6 +16,7 @@ const Hero: React.FC = () => {
           alt='Никита Самойлов'
           priority
           className={ styles.hero__img }
+          quality={ 100 }
         />
         <NextImage
           src={ imgMobile }
@@ -24,6 +25,7 @@ const Hero: React.FC = () => {
           alt='Никита Самойлов'
           priority
           className={ styles.hero__img_mobile }
+          quality={ 100 }
         />
         <div className={ styles.hero__text }>
           <span className={ styles.hero__pretitle }>
