@@ -1,6 +1,6 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
 import React from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { TAccordionProj } from '@/types/accordeon';
 import styles from './AccordionProject.module.scss';
 
@@ -58,7 +58,7 @@ const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
               <article style={
                 +checked === el.num ?
                   {
-                    height: accordionHeight + 30
+                    height: accordionHeight + 40
                   } :
                   { height: 0 }
               }
