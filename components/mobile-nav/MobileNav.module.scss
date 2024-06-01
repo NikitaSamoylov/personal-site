@@ -9,7 +9,7 @@
   height: 100%;
   background-color: rgb(58, 58, 49);
   padding: 120px 20px;
-  transition: .3s;
+  transition: .1s;
 
   &__hidden {
     display: flex;
@@ -22,12 +22,8 @@
     height: 100%;
     background-color: rgb(58, 58, 49);
     padding: 120px 20px;
-    transition: .3s;
+    transition: .1s;
     transform: translateX(-50px);
-  }
-
-  &__content {
-    position: relative;
   }
 
   &__link {

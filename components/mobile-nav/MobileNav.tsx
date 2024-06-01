@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Animated } from "react-animated-css";
 import { VscMenu } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
 import { usePathname } from 'next/navigation';
