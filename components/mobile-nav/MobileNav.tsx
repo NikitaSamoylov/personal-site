@@ -42,15 +42,10 @@ const MobileNav: React.FC = () => {
         </div>
         <ul className={ styles.nav__content }>
           {
-            nav.map(el => {
+            menu && nav.map(el => {
               return (
                 <li className={ styles.nav__item }
                   key={ el.title }
-                  style={
-                    menu ?
-                      { opacity: 1, transition: '.4s' } :
-                      { opacity: 0 }
-                  }
                 >
                   <Link key={ el.title }
                     href={ el.link }
