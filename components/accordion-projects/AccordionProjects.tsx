@@ -10,7 +10,7 @@ interface IAccordeonProps {
 
 const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
   const [checked, setChecked] = useState('0');
-  const [accordionHeight, setAccordionHeight] = useState(690);
+  const [accordionHeight, setAccordionHeight] = useState(710);
 
   const targetRef = useRef(null);
 
@@ -58,7 +58,7 @@ const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
               <article style={
                 +checked === el.num ?
                   {
-                    height: accordionHeight + 40
+                    height: accordionHeight + 50
                   } :
                   { height: 0 }
               }

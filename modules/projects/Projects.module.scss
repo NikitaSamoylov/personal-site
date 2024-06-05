@@ -1,3 +1,5 @@
+@import '../../styles/vars.scss';
+
 .projects {
 
   &__title {
@@ -14,5 +16,26 @@
     line-height: 32px;
     margin-bottom: 23px;
     text-align: left !important;
+  }
+
+  &__additional {
+    margin-top: 50px;
+    margin-bottom: 125px;
+  }
+
+  &__additional_info {
+    font-size: 2rem;
+    color: $primary-text-color;
+    line-height: 32px;
+    margin-right: 5px;
+  }
+
+  &__additional_link {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-bottom: 2px solid black;
   }
 }
