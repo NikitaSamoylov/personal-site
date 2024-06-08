@@ -32,7 +32,7 @@ const projectsData = [
 
       'Список персонажей и данные по персонажу сохраняются в Local Storage. Поэтому не требуется запрос к базе данных при возврате к списку персонажей. Благодаря этому интерфейс для пользователя работает быстрее.',
     ],
-    deployLink: 'https://star-wars-puel6ol28-nikits-projects-1db6153d.vercel.app/',
+    deployLink: 'https://star-wars-app-snowy.vercel.app/',
     gitHubLink: 'https://github.com/NikitaSamoylov/star-wars-app/tree/func-components',
   },
   {
