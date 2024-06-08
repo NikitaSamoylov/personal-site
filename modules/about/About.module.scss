@@ -1,3 +1,5 @@
+@import '../../styles/vars.scss';
+
 .about {
 
   &__about {
@@ -8,12 +10,7 @@
     font-size: 4.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-
-  &__subtitle {
-    font-size: 3rem;
-    font-weight: 600;
+    color: $main-page-title-color;
     margin-bottom: 76px;
   }
 
@@ -39,6 +36,7 @@
     font-size: 4.2rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: $main-page-title-color;
     margin-bottom: 76px;
   }
 }

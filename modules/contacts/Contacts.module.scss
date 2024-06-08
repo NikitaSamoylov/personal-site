@@ -1,3 +1,5 @@
+@import '../../styles/vars.scss';
+
 .contacts {
   padding-bottom: 125px;
 
@@ -8,6 +10,7 @@
   &__title {
     font-size: 4.2rem;
     font-weight: 600;
+    color: $main-page-title-color;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-bottom: 76px;
@@ -41,5 +44,6 @@
 
   &__item_title {
     font-weight: 600;
+    color: $main-page-title-color;
   }
 }

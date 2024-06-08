@@ -6,7 +6,8 @@ const contactsData = [
   { title: 'Discord', value: 'nikitasamoylov0942' },
   { title: 'Github', value: 'nikitasamoylov' },
   { title: 'Email', value: 'nsam7655@gmail.com' },
-  { title: 'Telegram', value: '+7 (996) 286-18-68' },
+  { title: 'Telegram', value: '@MkxMark2' },
+  { title: 'Skype', value: 'nsam7655@gmail.com' },
 ];
 
 const Contacts: React.FC = () => {

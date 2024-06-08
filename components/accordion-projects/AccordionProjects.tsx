@@ -9,7 +9,7 @@ interface IAccordeonProps {
 };
 
 const AccordionProjects: React.FC<IAccordeonProps> = ({ data }) => {
-  const [checked, setChecked] = useState('0');
+  const [checked, setChecked] = useState('900');
   const [accordionHeight, setAccordionHeight] = useState(710);
 
   const targetRef = useRef(null);

@@ -4,6 +4,7 @@
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1.4rem;
+  font-weight: 400;
   padding: 12px 0;
   border: none;
   outline: 1px solid;
@@ -23,6 +24,6 @@
 
 @media (hover:hover) {
   .btn:hover {
-    outline-color: black;
+    outline-color: $main-page-title-color;
   }
 }

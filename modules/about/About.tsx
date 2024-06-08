@@ -45,11 +45,11 @@ const About: React.FC = () => {
     <div className='container'>
       <div className={ styles.about__about }>
         <h1 className={ styles.about__title }>
-          Привет,
+          обо мне
         </h1>
-        <h2 className={ styles.about__subtitle }>
+        {/* <h2 className={ styles.about__subtitle }>
           меня зовут Никита
-        </h2>
+        </h2> */}
         <p className={ styles.about__description }>
           Делаю сайты на Javascript, Typescript и скоростные веб-приложения.
         </p>

@@ -5,9 +5,9 @@ import styles from './Nav.module.scss';
 
 const nav = [
   { title: 'главная', link: '/' },
-  { title: 'о себе', link: '/about' },
+  { title: 'обо мне', link: '/about' },
   { title: 'проекты', link: '/projects' },
-  { title: 'резюме', link: 'https://drive.google.com/file/d/1upoxTrC9XlvYBA8RBYP6jMFSjFEoQBaD/view?usp=drive_link' },
+  { title: 'резюме', link: 'https://drive.google.com/file/d/1BfIeLfnjeb4f514pR8QbJM7I3M8gBJe7/view?usp=drive_link' },
   { title: 'связаться', link: '/contacts' },
 ];
 

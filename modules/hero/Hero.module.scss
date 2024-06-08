@@ -20,7 +20,7 @@
   &__pretitle {
     position: relative;
     left: -50px;
-    color: $primary-text-color;
+    color: $main-page-title-color;
     font-size: 5.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -29,7 +29,7 @@
   &__title {
     position: relative;
     left: 32px;
-    color: $primary-text-color;
+    color: $main-page-title-color;
     font-size: 5.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -41,7 +41,7 @@
     font-size: 2rem;
     color: $primary-text-color;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     max-width: 337px;
     margin-bottom: 65px;
     line-height: 31px;
