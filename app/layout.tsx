@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Ubuntu, PT_Sans_Narrow, Roboto } from "next/font/google";
+import YandexMetrikaContainer from "@/libs/YandexMetrika";
 import "./globals.scss";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: '400' });
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
   description: "Создаю сайты на Javascript, Next, React",
 };
 
+const analyticsEnabled = !!(process.env.NODE_ENV === "production");
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,6 +24,9 @@ export default function RootLayout({
       <body className={ roboto.className }>
         { children }
       </body>
+      <YandexMetrikaContainer
+        enabled={ analyticsEnabled }
+      />
     </html>
   );
 }
