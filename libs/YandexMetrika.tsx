@@ -1,32 +1,47 @@
 "use client";
 
-import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-import Script from "next/script";
-import ym from "react-yandex-metrika";
+import Router from "next/router";
+import React, { useCallback, useEffect } from "react";
+import ym, { YMInitializer } from "react-yandex-metrika";
 
-export function Metrika() {
-  const pathName = usePathname();
-  const searchParams = useSearchParams();
-  useEffect(() => {
-    ym('97598670', "hit", window.location.href);
-  }, [pathName, searchParams]);
-  return (
-    <Script id="yandex-metrika">
-      { `
-          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+type Props = {
+  enabled: boolean;
+};
 
-          ym(97598670, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true,
-                webvisor:true
-          });
-      `}
-    </Script>
+const YM_COUNTER_ID = 97598670;
+
+const YandexMetrikaContainer: React.FC<Props> = ({ enabled }) => {
+  const hit = useCallback(
+    (url: string) => {
+      if (enabled) {
+        ym("hit", url);
+      } else {
+        console.log(`%c[YandexMetrika](HIT)`, `color: orange`, url);
+      }
+    },
+    [enabled],
   );
-}
+
+  useEffect(() => {
+    hit(window.location.pathname + window.location.search);
+    Router.events.on("routeChangeComplete", (url: string) => hit(url));
+  }, [hit]);
+
+  if (!enabled) return null;
+
+  return (
+    <YMInitializer
+      accounts={ [YM_COUNTER_ID] }
+      options={ {
+        defer: true,
+        webvisor: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      } }
+      version="2"
+    />
+  );
+};
+
+export default YandexMetrikaContainer;

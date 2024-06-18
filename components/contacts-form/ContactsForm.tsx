@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './ContactsForm.module.scss';
-import ym from 'react-yandex-metrika';
 
 type TInputs = {
   name: string;
@@ -44,9 +43,6 @@ const ContactsForm: React.FC = () => {
     } catch (e) {
       setBtnMsg('Ошибка отправки')
     };
-
-    ym('97598670', 'reachGoal', 'TARGET_NAME');
-    return true;
   };
 
   return (
